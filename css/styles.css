@@ -3,3 +3,87 @@
 /* Цвет выделения текста #2196F3 */
 /* Второстепенное выделение текста #FFFFFF */
 /* Цвет адреса rgba(255, 255, 255, 0.6) */
+:root {
+  --main-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --second-accent-color: #ffffff;
+  --contacts-footer-color: rgba(255, 255, 255, 0.6);
+  --button-secondary-bg-color: #f5f4fa;
+}
+
+body {
+  color: var(--main-text-color);
+}
+
+.list {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* Стили для index */
+/* .hero .footer -- временная заливка, чтоб был виден белый текст */
+.hero {
+  background-color: var(--title-text-color);
+}
+
+.footer {
+  background-color: var(--title-text-color);
+}
+
+.nav-link {
+  color: var(--title-text-color);
+}
+
+.nav-link:hover,
+.contacts-header:hover,
+.nav-link:focus,
+.contacts-header:focus {
+  color: var(--accent-color);
+}
+
+.nav-link.current {
+  color: var(--accent-color);
+}
+
+.contacts-header {
+  color: var(--main-text-color);
+}
+
+.hero-title {
+  color: var(--second-accent-color);
+}
+
+.button.primary {
+  background-color: var(--accent-color);
+  color: var(--second-accent-color);
+}
+
+.section-title {
+  color: var(--title-text-color);
+}
+
+.title {
+  color: var(--title-text-color);
+}
+
+.address {
+  color: var(--second-accent-color);
+}
+
+.contacts-footer {
+  color: var(--contacts-footer-color);
+}
+
+/* Стили для portfolio */
+.button.secondary {
+  color: var(--title-text-color);
+  background-color: var(--button-secondary-bg-color);
+}
+
+.button.secondary:hover {
+  color: var(--second-accent-color);
+  background-color: var(--accent-color);
+}
